@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+# tfvars will be supplied externally
+terraform.tfvars
+
 # Crash log files
 crash.log
 crash.*.log

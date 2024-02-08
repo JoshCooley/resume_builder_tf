@@ -7,4 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ./build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rendered-resume
+          path: |
+            resume.html
+            resume.md
 ...

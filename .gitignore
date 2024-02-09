@@ -15,6 +15,10 @@ crash.*.log
 # Dependency directories
 node_modules/
 
+# Backup files
+*.bak
+
 # Rendered files
 resume.html
 resume.md
+resume.pdf

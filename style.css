@@ -1,2 +1,64 @@
-h1 {text-align: center;}
-h2 {color: red;}
+body {
+  font-family: Georgia;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 12px;
+  font-variant: small-caps;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 10px;
+  font-weight: normal;
+  margin-top: 0px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 11;
+  text-align: center;
+}
+
+h4 {
+  border-bottom: 1px solid rgba(185, 185, 185);
+  border-top: 1px solid black;
+  font-size: 10px;
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: left;
+  word-spacing: 1px;
+}
+
+h5 {
+  font-size: 11;
+  margin-top: 35px;
+  text-align: center;
+}
+
+ul {
+  margin-top: -20px;
+  padding: 10px;
+  padding-bottom: 0px;
+  list-style: none;
+}
+
+ul ul {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+ul>li {
+  padding-left: 15px;
+  position: relative;
+}
+
+ul>li:before {
+  content: "▪";
+  position: absolute;
+  left: 5px;
+}

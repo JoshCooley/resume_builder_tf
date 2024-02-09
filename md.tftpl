@@ -1,2 +1,20 @@
 <link href="style.css" rel="stylesheet"></link>
 # ${full_name}
+## *${address}<br />m: ${phone_number} ● e: <${email_address}>*
+### ${tagline}
+#### Work History
+
+%{ for job in work_history }
+**${job.job_type}** – ${job.company} <span style="float:right;">${job.start_year}—${job.end_year}</span>
+  %{~ for pos in job.positions ~}<br />
+*${pos.title} (${ join(", ", pos.tasks)})*
+    %{~ for res in coalesce(pos.responsibilities, []) ~}
+* *${res.top_level}*
+      %{~ for sub in coalesce(res.sub_level, []) ~}
+  - *${sub}*
+      %{~ endfor ~}
+    %{~ endfor ~}
+  %{~ endfor ~}
+%{ endfor ~}
+
+##### *This resume was built with Terraform!* ![GitHub logo](github-mark.svg =15x15) <${github_page}>

@@ -1,0 +1,68 @@
+first_name     = "Anna"
+middle_initial = "B"
+last_name      = "Foobar"
+address        = "123 Any St., Sometown, DV 11111"
+phone_number   = "123-555-4567"
+email_address  = "anna@example.com"
+tagline        = "It's good to be curious about many things."
+work_history = [
+  {
+    job_type   = "Early childhood education"
+    company    = "College for Kids"
+    start_year = "1994"
+    end_year   = "Current"
+    positions = [{
+      title = "3rd Grade Teacher"
+      tasks = [
+        "Math",
+        "Spelling",
+        "Shapes",
+      ]
+      responsibilities = [
+        {
+          top_level = "Taught 3rd graders 5 days per week."
+        },
+        {
+          top_level = "Informed parents on their child's progress."
+        },
+        {
+          top_level = "Improved school system by:"
+          sub_level = [
+            "Planting trees on school grounds",
+            "Assisting other teachers with lesson planning.",
+            "Advocating for resources and support from the school board."
+          ]
+        },
+      ]
+    }]
+  },
+  {
+    job_type   = "Custodial"
+    company    = "College for Kids"
+    start_year = "1990"
+    end_year   = "1994"
+    positions = [{
+      title = "Janitorial Specialist"
+      tasks = [
+        "Maintenance",
+        "Cleaning",
+        "Sanitization",
+      ]
+      responsibilities = [
+        {
+          top_level = "Kept building and property in clean and orderly condition."
+        },
+        {
+          top_level = "Performed routine maintenance activities."
+        },
+        {
+          top_level = "Performed heavy cleaning duties."
+        },
+        {
+          top_level = "Scrubbed, sanitized, and supplied restroom facilities."
+        },
+      ]
+    }]
+  },
+]
+github_page = "https://github.com/JoshCooley/resume_builder_tf"

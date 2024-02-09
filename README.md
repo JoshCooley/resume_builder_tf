@@ -14,6 +14,6 @@ First, ensure terraform, yarn, and chromium are installed and in your PATH.
 I've included a [terraform.tfvars.example](terraform.tfvars.example).
 
 1. Copy this to terraform.tfvars, and update the values as desired.
-1. Run ./build.sh to build.
+1. Run [./build.sh](build.sh) to build.
 1. This will generate a resume.md, resume.html, and resume.pdf.
 1. Enjoy!
